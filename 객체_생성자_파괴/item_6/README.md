@@ -1,4 +1,4 @@
-# [Item 6] 불필요한 객체 생성을 피해✵.
+# [Item 6] 불필요한 객체 생성을 피해.
 <details open>
     <summary><b>Index</b></summary>
 <div markdown="1">
