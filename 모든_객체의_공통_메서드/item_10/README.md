@@ -12,6 +12,7 @@
   - [일관성](#4-일관성)
   - [Null이 아니여야 함](#5-must-not-be-null)
 - [양질의 equals 재정의 방법](#-양질의-equals-메서드-구현-방법)
+- [주의 사항](#-주의-사항-)
 
 </div>
 </details>
@@ -361,3 +362,5 @@ Null과 같지 않아야 한다고<br/>
   - " _입력 타입이 Object 가 아니다_ " → **다중 정의** (재정의 ❌)
   - _구체적인 타입을 명시한 equals는 손해가 더 크며 보안 측면에서도 잘못된 정보를 주게 된다._
 - 몇 번이고 강조하지만 " <u>**꼭 필요한 경우가 아니라면** `equals`를 재정의하지 말자.</u> "
+
+> Google - `AutoValue` 알아보기 : [GitHub : google/auto](https://github.com/google/auto/tree/main/value)
