@@ -61,6 +61,20 @@
 #### ② `비정적` 멤버 클래스
 > `어댑터` **정의** 시 자주 활용
 
+```java
+import java.util.AbstractSet;
+import java.util.Iterator;
+
+public class MySet<E> extends AbstractSet<E> {
+    @Override
+    public Iterator<E> iterator() {
+        return new MyIterator();
+    }
+
+    private class MyIterator implements Iterator<E> {
+    }
+}
+```
 - 감싼 **바깥 클래스의 인스턴스**와 **암묵적 연결**
   - **비정적 멤버 클래스 내 메서드**에서 <br/>
     <u>바깥 인스턴스의 **메서드 호출** / **참조 값**</u> 활용 가능 ( <u>정규화된 `this`</u> 필요 )<br/><br/>
